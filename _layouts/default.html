@@ -13,7 +13,9 @@
 
     <body>
         <div id="header">
-            <a href="about/about.md">About Me</a>
+            {% for page in site.pages  %}
+                <a href="{{page.url}}">{{ page.title }}</a>
+            {% endfor %}
         </div>
         <div class="site">
 
