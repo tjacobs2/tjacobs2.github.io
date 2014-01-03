@@ -5,28 +5,17 @@ title: Home
 
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
-    <header class="inner">
-      <h1 id="site_title">Tim Jacobs</h1>
-      <h2 id="site_tagline">Food, Woodworking, and Structural Biology</h2>
-    </header>
+    <h1 id="site_title">Tim Jacobs</h1>
+    <h2 id="site_tagline">A place for sharing, boasting, and archiving</h2>
 </div>
 
-<div id="main_content_wrap" class="outer">
-  <section id="main_content" class="inner">
-    <!-- Show last 5 posts here -->
+<div id="recent_posts">
     {% for post in site.posts limit: 5  %}
-            <article>
-    
-            <header>
-                <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
-                <span class="date"><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span><br/>
-                <span class="category"><i class="icon-tag"></i> {{ post.categories | category_links }}</span><br/>
-                <span class="author"><i class="icon-user"></i> {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</span>
-            </header>
-            
-            <div class="entry">{{ post.excerpt }}</div>
-    
-            </article>
+        <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+        <span class="date"><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span><br/>
+        <span class="category"><i class="icon-tag"></i> {{ post.categories | category_links }}</span><br/>
+        <span class="author"><i class="icon-user"></i> {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</span>
+        
+        <div class="entry">{{ post.excerpt }}</div>
     {% endfor %}
-  </section>
 </div>
