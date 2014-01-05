@@ -12,17 +12,19 @@
     </head>
 
     <body>
-        <div id="header">
-            {% for page in site.pages  %}
-                <a href="{{page.url}}">{{ page.title }}</a>
-            {% endfor %}
-        </div>
-        <div class="site">
+        <div class="content">
+            <div class="header">
+                {% for page in site.pages  %}
+                    <a href="{{page.url}}">{{ page.title }}</a>
+                {% endfor %}
+            </div>
+            <div class="site">
 
-            {{ content }}
+                {{ content }}
 
-        </div>
-        <div id="footer">
+            </div>
+            <div class="footer">
+            </div>
         </div>
     </body>
 
