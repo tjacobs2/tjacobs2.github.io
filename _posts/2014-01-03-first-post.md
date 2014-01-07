@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Token 'first post'
-tags: about test
 ---
 
 ###Blasting into the blogosphere
