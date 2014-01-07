@@ -136,12 +136,12 @@
 	
 	#main-wrapper
 	{
-		padding: 6em 0 6em 0;
+		padding: 2em 0 2em 0;
 	}
 	
 	#footer-wrapper
 	{
-		padding: 6em 0 8em 0;
+		padding: 2em 0 2em 0;
 	}
 
 /*********************************************************************************/
@@ -150,7 +150,7 @@
 
 	#header
 	{
-		padding: 14em 0 7em 0;
+		padding: 8em 0 3em 0;
 	}
 	
 		#header h1
@@ -375,6 +375,6 @@
 
 	#copyright
 	{
-		margin-top: 6em;
-		padding-top: 4em;
+		margin-top: 2em;
+		padding-top: 2em;
 	}
